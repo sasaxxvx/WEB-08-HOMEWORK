@@ -1,0 +1,87 @@
+body{
+    background-color: #fafafa;
+    font-family: 'Droid Sans', sans-serif;
+    display: flex;
+}
+
+
+.card-body{
+    background: #ffffff;
+	border: 1px solid #f2f2f2;
+	border-radius: 3px;
+	width: 350px;
+	height: 450px;
+    margin: auto;
+    
+    
+   
+}
+.card-header{
+    height: 80px;
+    display: flex;
+}
+.card-header>div{
+    display: inline-block;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 5px;
+    vertical-align: middle;
+   
+    
+}
+.header-profile-pic-circle{ 
+    background-color: rgb(211, 88, 88);
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* .header-profile-pic{
+    background: #ffffff;
+	border-radius: 3px;
+	width: 100%;
+	max-width: 600px;
+    margin: auto;
+    
+    
+} */
+
+.header-content{
+    display: blcok;
+    padding: 20px;
+    margin-right: 170px; 
+    display: inline-block;  
+}
+#time{
+    font-size: 15px;
+    color:grey;
+}
+
+
+
+.card-pic{
+    display: flex;
+    background-size: cover;
+    width: 350px;
+    height:280px;
+}
+
+.card-text{
+    background: #cea3a3;
+    height: 80px;
+    /* 下面这个padding很重要，变了就会有空隙，why？/(ㄒoㄒ)/~~ */
+    padding: 16px;
+}
+
+.card-footer>div{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 16px;
+    align-items: center;
+    height: 55px;
+    background: #cea3a3;
+   
+}
