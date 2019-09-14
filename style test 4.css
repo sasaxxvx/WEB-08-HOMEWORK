@@ -1,0 +1,47 @@
+body{
+    background-color: #ffff;
+}
+div{
+    background-color: bisque;
+    height: 50px;
+/* 下行的text-align很重要，它的功能是使得这个div里面或者说
+他生的所有的baby一起打包，全部水平居中，
+而且，对baby的baby也奏效！非常关键！ */
+    text-align: center;
+    line-height: 50px;
+    
+    
+   
+}
+.P{
+    background-color: aqua;
+    width: 100px;
+    
+}
+.L{
+    background-color: aqua;
+    width: 100px;
+    
+
+}
+.S{
+    background-color: aqua;
+    width: 100px;
+    
+
+}
+.M{
+    background-color: aqua;
+    width: 100px;
+    
+
+}
+
+
+div>div{
+    display: inline-block;
+    background-color: rgb(197, 86, 86);
+}
+span{
+    background-color:rgb(141, 141, 49);
+}

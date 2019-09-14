@@ -1,0 +1,19 @@
+body{
+    background-color: forestgreen;
+}
+.nav>div{
+    display: inline-block;
+
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    width: 400px;
+    padding: 5px;
+    background-color: pink;
+    height: 5px;
+}
+.center{
+    
+}
