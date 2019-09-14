@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test1</title>
+</head>
+<body>
+   <p>第一段</p> 
+   <p>第二段</p>
+   <p>第三段</p>
+   <span>上</span>
+   <span>下</span>
+   <span>左</span><span>右</span>
+
+   <hr>
+   <a href='https://www.udemy.com/home/my-courses/learning/'><img src=
+    "http://img.caixin.com/2014-06-04/1401867857760793.jpg" alt="zuowei Udemy"></a>
+
+   <div>第一行</div><div>第二行</div>
+   <div>第三行</div>
+<hr>
+   <div>下面是列表相关与元素</div>
+   <ul>
+       <li>paris</li>
+       <li>london</li>
+       <li>NewYork</li>
+   </ul>
+
+   <ol>
+       <li>有序1</li>
+       <li>有序2</li>
+       <li>
+           有序3
+       </li>
+   </ol>
+   <hr>
+   <div>为超链接元素<a>指定download属性</div>
+    <a href="http://img.caixin.com/2014-06-04/1401867857760793.jpg" 
+    download="海滩图片"><img src="http://img.caixin.com/2014-06-04/1401867857760793.jpg" 
+    alt="海滩图片"></a>
+
+    <hr>
+    <h2>以下内容测试<b><i>列表</i></b>相关内容dl, dt, dd</dd></h2>
+    <dl>
+        <dt>France</dt>
+        <dd>Capital: Paris</dd>
+        <dt>England</dt>
+        <dd>Capital: Londo</dd>
+        <dd>Northern City: Liverpool</dd>
+    </dl>
+    <hr>
+    <h2>2.1.7 <i>表格</i>相关元素 我的瑕疵版本</h2>
+    <table>
+        <tbody>
+                <caption><b>疯狂java体系图书</b></caption>
+                <tr>
+                    <th>
+                        <td>书名</td>
+                        <td>作者</td>
+                    </th>
+                <tr>
+                    <td>疯狂java讲义</td>
+                    <td>李刚</td>
+
+                </tr>
+                <tr>
+                    <td>轻量级javaEE企业用用实战</td>
+                    <td>李刚</td>
+                </tr>
+                </tr>
+        </tbody>
+    </table>
+    
+<hr>
+<h2>以上表格的正确版本</h2>
+<table style="width:400px" border="1">
+        
+    <caption><b>疯狂java体系图书</b></caption>
+    <tr>
+        <th>书名</th>
+        <th>作者</th>
+    
+    </tr>
+    <tr>
+        <td>疯狂java讲义</td>
+        <td>李刚</td>
+
+    </tr>
+    <tr>
+        <td>轻量级javaEE企业用用实战</td>
+        <td>李刚</td>
+    </tr>
+    </tr>
+       
+</table>
+<hr>
+<h2>列表和表格是不一样的哦!</h2>
+<hr>
+<h2>跨行跨列表格exercise 1</h2>
+<table style="width:240px" border="2">
+    <caption>跨行跨列表格 exercise 1 </caption>
+    <tr>
+        <td>N</td>
+        <td>N</td>
+        <td>N</td>
+    </tr>
+    <tr>
+        <td>N</td>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <td rowspan="2"></td>
+        <td>N</td>
+        <TD>N</TD>
+    </tr>
+    <tr>
+        <td>extra N</td>
+        <td>extra N</td>
+
+    </tr>
+</table>
+<hr>
+<h2>跨行跨列表格exercise 2</h2>
+<table style="width:400px" border="4" >
+    <caption>跨行跨列表格exercise 2</caption>
+    <tr>
+        <th></th>
+        <th>book name</th>
+        <th>author</th>
+
+    </tr>
+    <tr>
+        <td rowspan="2">Java体系</td>
+        <td>疯狂java讲义</td>
+        <td>李刚</td>
+    </tr>
+    <tr>
+        <td>轻量级javaEE企业用用实战</td>
+        <td>李刚</td>
+    </tr>
+    <tr>
+        <td rowspan="2">ios体系</td>
+        <td>疯狂swift讲义</td>
+        <td>李刚</td>
+    </tr>
+    <tr>
+        <td>疯狂ios讲义</td>
+        <td>李刚</td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align:right">现总计：4本图书</td>
+    </tr>
+</table>
+
+<hr>
+<h2>通过css添加背景颜色的表格exercise 3 <br>
+    通过背景黑色来实现边框效果<br>
+以及用thead, tfoot，tbody元素</h2>
+<table 
+style="background-color:darkred;
+border-collapse:seperate;
+border-spacing: 1px;
+width: 400px"
+border="2">
+    <caption style="background-color: darkgray;"><b>疯狂java体系图书</b></caption>
+    <colgroup style="background-color:white;">
+        <col style="width: 160px">
+        <col span="2" style="width: 100px">
+    </colgroup>
+    <thead style="background-color:blueviolet">
+    <tr>
+        <th>书名</th>
+        <th>作者</th>
+        <th>价格</th>
+    </tr>
+    </thead>
+    <tfoot style="background-color: coral">
+    <tr>
+        <td colspan="3" style="text-align: right">
+        现总计：2本图书</td>
+    </tr>
+    </tfoot>
+    <tbody style="background-color:burlywood">
+    <tr>
+        <td>疯狂java讲义</td>
+        <td>李刚</td>
+        <td>109</td>
+    </tr>
+    <tr>
+        <td>轻量级javaEE企业实战</td>
+        <td>李刚</td>
+        <td>89</td>
+    </tr>
+    </tbody>
+    
+
+</table>
+
+
+
+
+
+
+    
+</body>
+</html>
