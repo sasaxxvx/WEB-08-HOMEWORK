@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* *{
+      margin: 0;
+      padding: 0;
+    } */
+    #container{
+      width: 150px;
+      height: 250px;
+      border: 1px solid grey;
+      text-align: center;
+      padding: 10px;
+      margin: 0 auto;
+    }
+   p{
+     font-size: 10px;
+   }
+   #inputbox{
+     width: 80px;
+     height: 30px;
+     border: 1px solid rgb(202, 197, 197);
+     text-align: center;
+     font-size: 20px;
+     line-height: 30px;
+     margin: 30px;
+     margin-top: 10px;
+
+   }
+   
+   
+   #result{
+     background-color:grey;
+     width: 80px;
+     height: 30px;
+     text-align: center;
+     line-height: 20px;
+     margin-left: 37px;
+     margin-top:-10px;
+   }
+
+  
+   
+  
+  </style>
+</head>
+<body>
+  <div id="container">
+      <div>
+      <h3>猜数字游戏</h3>
+      <p>现在已生成一个1-100的数字，猜中有奖</p>
+    </div>
+    <div>
+      <input type="text" id='inputbox' value=0></input>
+      <p id=result></p>
+      
+      <input type="button" id="bt" value="确定">
+
+      
+    
+    </div>
+  </div>
+  <script>
+
+
+  var oInput=document.getElementById('inputbox');
+  var oBt=document.getElementById('bt');
+  // var clientAnswer=Number(oInput.value);
+  var oAnswer=parseInt(Math.random()*100+1);
+  var oResult=document.getElementById('result');
+  
+
+
+  oBt.onclick=function(){
+    // alert(1);
+    // alert(oAnswer);
+    // alert(Number(oInput.value));
+    if(Number(oInput.value)<oAnswer){
+      // alert('TOO SMALL!');
+      oResult.innerHTML='TOO SMALL!';
+      }
+      else if (Number(oInput.value)>oAnswer){
+        // alert('TOO BIG！');
+      oResult.innerHTML='TOO BIG';
+      }
+      else{
+        // alert('BINGO!');
+      oResult.innerHTML='BINGO!';
+      }
+      
+
+}
+  
+
+
+    // var oAnswer=parseInt(Math.random()*100+1);
+    // alert(oAnswer);
+    // if (clientAnswer<oAnswer){
+    //   alert('Too Small!');}
+    //   else if(clientAnswer>oAnswer){
+    //     alert('Too Much!');} 
+    //     else if(clientAnswer=oAnswer){
+    //       alert('Bingo!!!')
+        
+  
+  </script>
+
+</body>
+</html>

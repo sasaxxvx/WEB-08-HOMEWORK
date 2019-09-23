@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id='mark'>
+    <input type="button" id= "bt" name="class" value='class'  >
+    <br>
+    <br>
+    <br>
+    <div style="width:100px; height:50px; background-color:bisque;"
+    id="classshowcase"></div>
+
+
+    
+    <script>
+    var oMark=document.getElementById('mark');
+    var oBt=document.getElementById('bt');
+    var oClassshowcase=document.getElementById('classshowcase');
+
+    oBt.onclick=function(){
+        // alert(oMark.value);
+        var mark=Number(oMark.value);
+        // alert(mark);
+        // oClassshowcase.innerHTML='class A';
+        if (mark>=90){
+            oClassshowcase.innerHTML='Class A';
+
+        }
+         else if (mark>=80){
+             oClassshowcase.innerHTML='Class B';
+         }
+         else if (mark>=70){
+             oClassshowcase.innerHTML='Class C';
+         }
+         else if (mark>=60){
+             oClassshowcase.innerHTML='Class D';
+         }
+         else {
+             oClassshowcase.innerHTML='Class F';
+         }
+        
+    }
+    
+    </script>
+
+   
+     
+
+
+</body>
+<</html>

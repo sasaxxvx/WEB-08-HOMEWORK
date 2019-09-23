@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>你可以不聪明 但是不可以不努力</title>
+    <style>
+    .box{
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgb(146, 142, 142);
+        display: inline-block;
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+        margin: 20px;
+
+    }
+    </style>
+</head>
+<body>
+    <input class="box" id="plus" type="button" value='+'>
+    <input class="box" id="minus" type="button" value="-">
+    <div>
+        <p id="text">你可以不聪明，但是不能不努力！</p>
+    </div>
+
+    <script>
+        var oPlus=document.getElementById('plus');
+        var oMinus=document.getElementById('minus');
+        var oText=document.getElementById('text');
+
+        var size=16;
+
+        oPlus.onclick=function(){
+            size=size+1 //如果没有这一步，无法持续多次变大，
+            oText.style.fontSize=size+'px';
+            
+
+        }
+
+        oMinus.onclick=function(){
+            size=size-1
+            oText.style.fontSize=size+'px';
+            
+
+        }
+        //字体的大小 写成可写成size+1+'px'，变小：size-1+'px'其实是ok的，很好玩哦
+
+    
+    
+    </script>
+
+
+</body>
+</html>

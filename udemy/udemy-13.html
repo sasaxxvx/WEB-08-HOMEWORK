@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>运算</title>
+    <style>
+   
+    </style>
+</head>
+<body>
+    <input type="text" id="num1" >
+    <input type="text" id="num2">
+    <input type="button" id="bt1" value="加法">
+    <input type="button" id="bt2" value="减法">
+    <input type="button" id="bt3" value="乘法">
+    <input type="button" id="bt4" value="除法">
+    <input type="button" id="bt5" value="取余">
+    <br>
+    <br>
+    <br>
+
+    <div>
+        <input type="text" id="result" value="result">
+    </div>
+
+   <script>
+   var oNum1=document.getElementById('num1');
+   var oNum2=document.getElementById('num2');
+   var oBt1=document.getElementById('bt1');
+   var oBt2=document.getElementById('bt2');
+   var oBt3=document.getElementById('bt3');
+   var oBt4=document.getElementById('bt4');
+   var oBt5=document.getElementById('bt5');
+   var oResult=document.getElementById('result');
+
+   //加法
+   oBt1.onclick=function(){
+       //只有加法需要转换数据类型
+       
+       oResult.value=(Number(oNum1.value)+Number(oNum2.value));
+   }
+   oBt2.onclick=function(){
+      // alert(oNum1.value-oNum2.value);
+       oResult.value=oNum1.value-oNum2.value;
+   }
+   oBt3.onclick=function(){
+       oResult.value=oNum1.value*oNum2.value;
+   }
+   oBt4.onclick=function(){
+       oResult.value=oNum1.value/oNum2.value;
+   }
+   oBt5.onclick=function(){
+      
+       oResult.value=oNum1.value%oNum2.value;
+   }
+
+
+
+
+
+
+
+   </script>
+
+
+
+</body>
+
+</html>

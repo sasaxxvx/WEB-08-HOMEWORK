@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+
+  <script>
+    var arr1=[1,2,3,4];
+    var arr2=[];
+    for(i in arr1){
+      arr2[i]=arr1[i]; //这样arr1,arr2指向的就不是同一个区域
+      
+    }
+    document.write(arr2);
+
+    alert(arr2)
+    
+    
+    </script>
+</body>
+</html>
